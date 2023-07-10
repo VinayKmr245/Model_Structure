@@ -1,7 +1,6 @@
 export default class BaseModel{
     constructor(model={}){
         this.assign(model);
-        this.mapModel(model);
     }
 
     static mapModel(data = {}){
