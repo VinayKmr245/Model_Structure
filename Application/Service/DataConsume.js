@@ -4,10 +4,8 @@ import EmployeeModel from '../models/EmployeeModel.js';
 
  class DataConsume extends BaseService{
     getPersonDetailsWithId(id){
-        console.log('id',id,"sevice call")
         const res= getPersonDetails(id);
-        console.log(res,typeof res,"res Output");
-        return BaseService.convertToModel(res,EmployeeModel); //service call such that data will get modelled over here
+        return this.convertToModel(res,EmployeeModel); //service call such that data will get modelled over here
     }
 } 
 

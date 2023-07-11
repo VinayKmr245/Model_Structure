@@ -8,7 +8,6 @@ export default class EmployeeModel extends BaseModel{
         this.location=model.location;
     }
     get modelType(){
-        console.log(model,typeof this, typeof model, "check types of models");
-        return 0;
+       return 1;
     }
 }

@@ -4,8 +4,8 @@ export default class BaseModel{
     }
 
     static mapModel(data = {}){
-        console.log(data,"data");
         return new this(data);
+
     }
 
     assign(model){
